@@ -23,7 +23,7 @@ $(function() {
       $chatPage.show();
       $loginPage.off('click');
       $currentInput = $inputMessage.focus();
-      socket.emit('add user', username);
+      socket.emit('new user', username);
     }
   }
 

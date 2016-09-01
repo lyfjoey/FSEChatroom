@@ -37,7 +37,7 @@ io.on('connection', function (socket) {
     socket.broadcast.emit('new message', message);
   });
 
-  socket.on('add user', function (username) {
+  socket.on('new user', function (username) {
     socket.username = username;
     MongoClient.connect(url, function(err, db) {
   		assert.equal(null, err);
